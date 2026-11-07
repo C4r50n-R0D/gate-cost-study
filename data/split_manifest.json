@@ -1,0 +1,10 @@
+{
+ "salt": "gate-cost-2026-11-07",
+ "n": 1140,
+ "counts": {
+  "pilot": 60,
+  "cal": 300,
+  "test": 780
+ },
+ "sha256": "b7acec3d54b51ca2184f373ee7b8aa7669dfc34d155686f522a5c79b4a7134c9"
+}
