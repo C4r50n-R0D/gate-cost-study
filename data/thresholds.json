@@ -1,0 +1,57 @@
+{
+ "rule": "largest observed p with false rejection <= 0.30 on clean calibration drafts that pass",
+ "taus": {
+  "tev": {
+   "tau": 0.8070843644709045,
+   "false_rejection": 0.29357798165137616,
+   "n": 109
+  },
+  "llama": {
+   "tau": 0.26215737529463223,
+   "false_rejection": 0.29357798165137616,
+   "n": 109
+  },
+  "gemma": {
+   "tau": 0.037326932659425986,
+   "false_rejection": 0.29357798165137616,
+   "n": 109
+  },
+  "qwen35": {
+   "tau": 0.32796655583801676,
+   "false_rejection": 0.29357798165137616,
+   "n": 109
+  },
+  "qwen25i": {
+   "tau": 0.9919316613090835,
+   "false_rejection": 0.29357798165137616,
+   "n": 109
+  },
+  "coder1.5": {
+   "tau": 0.8124359079044035,
+   "false_rejection": 0.29357798165137616,
+   "n": 109
+  },
+  "coder3": {
+   "tau": 0.7179165853764946,
+   "false_rejection": 0.29357798165137616,
+   "n": 109
+  },
+  "coder7": {
+   "tau": 0.8883370631676798,
+   "false_rejection": 0.29357798165137616,
+   "n": 109
+  },
+  "coder14": {
+   "tau": 0.7973958610975868,
+   "false_rejection": 0.29357798165137616,
+   "n": 109
+  }
+ },
+ "n_pass": 109,
+ "cal_status": {
+  "pass": 109,
+  "fail": 190,
+  "timeout": 1
+ },
+ "models": "NAME                   ID              SIZE      MODIFIED     \ngemma4:12b             c7597fc90b86    7.7 GB    13 days ago     \ntev1:4b                4d24c6f6d61a    4.4 GB    2 weeks ago     \nllama3.1:8b            46e0c10c039e    4.9 GB    2 weeks ago     \nqwen2.5-coder:14b      9ec8897f747e    9.0 GB    2 weeks ago     \nqwen2.5-coder:3b       f72c60cabf62    1.9 GB    2 weeks ago     \nqwen2.5:7b-instruct    845dbda0ea48    4.7 GB    4 weeks ago     \nqwen2.5-coder:7b       dae161e27b0e    4.7 GB    4 weeks ago     \nqwen3.5:9b             6488c96fa5fa    6.6 GB    7 weeks ago     \nqwen2.5-coder:1.5b     d7372fd82851    986 MB    3 months ago    \n"
+}
