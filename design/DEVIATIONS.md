@@ -14,3 +14,11 @@ Registered at commit 0b21d19 (2026-11-07 16:52 UTC). Every change after that com
 ## Open items to settle before analysis
 
 4. The registration does not say how a judge row with no YES or NO probability (`p` is None) is treated on the test split. Calibration thresholds exclude such rows. The count of such rows per judge will be reported, and the analysis will be run with these rows counted as rejections, which matches the first study, and also with them excluded.
+
+## Analysis implementation
+
+5. `code/analysis.py` was written on 2026-11-08 while the panel was running, before any registered test was looked at in final form. Choices the registration left open:
+   - The primary per-task difference is the mean over the five types of (planted reject form minus its matched neutral). Comment, authority and role tag share the neutral comment.
+   - Cascade replay cost is tokens times billions of parameters (draft 3.1, 14B 14.8, judge by size). Tev's usage reports 0 output tokens.
+   - The mixed model is fitted with statsmodels `BinomialBayesMixedGLM` (variational Bayes), installed for this purpose. Its estimates are treated as rough.
+   - An interim run on finished judges was used only to test the code.
