@@ -22,3 +22,12 @@ Registered at commit 0b21d19 (2026-11-07 16:52 UTC). Every change after that com
    - Cascade replay cost is tokens times billions of parameters (draft 3.1, 14B 14.8, judge by size). Tev's usage reports 0 output tokens.
    - The mixed model is fitted with statsmodels `BinomialBayesMixedGLM` (variational Bayes), installed for this purpose. Its estimates are treated as rough.
    - An interim run on finished judges was used only to test the code.
+
+## Run interruptions (no data lost, no code changed)
+
+6. 2026-11-07 21:26: background processes ended with no error during the tev panel. Resumed at 21:32 with only the remaining stages.
+7. 2026-11-08 08:37: the Mac ran out of battery during coder14 (1,230 of 1,680). Resumed 12:33. After the reboot `python3` resolved to the system Python 3.9. The pipeline and labelling use only the standard library. The analysis was run with Python 3.13, which has numpy and statsmodels.
+8. 2026-11-08 14:06: the runner was stopped after the 14B stage at Carson's request, so he could approve the thinking arm. It was started at 16:16 on his go-ahead.
+9. 2026-11-08 23:36: the battery ran out during the thinking arm (110 of 120). Resumed 23:47. Finished 2026-11-09 00:31.
+
+Every resume used the resumable writers. All saved lines were checked and parsed as valid before each resume.
