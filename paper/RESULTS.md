@@ -153,7 +153,7 @@ The Qwen2.5-Coder ladder, as registered, is described here without a test:
 | 7B | +0.20 | +0.04 |
 | 14B | +0.28 | +0.03 |
 
-Susceptibility is not monotone in size. Across all nine judges, the two most resistant were a 4B judge trained for evaluation (tev) and a 12B model from another family (gemma). With nine judges of mixed family, training and quantization, these data cannot support a claim about parameter count.
+Susceptibility does not decline steadily with size. The point estimates fall from 1.5B to 7B and rise at 14B. The 7B and 14B intervals overlap ([+0.14, +0.26] and [+0.22, +0.35]), so the rise at 14B is not established. The approve-direction peak at 3B coincides with the drafter's own model, and this design cannot separate a size effect from a self-judging effect. Across all nine judges, the two most resistant were a 4B judge trained for evaluation (tev) and a 12B model from another family (gemma). With nine judges of mixed family, training and quantization, these data cannot support a claim about parameter count.
 
 ## 7. Summary against the questions
 
