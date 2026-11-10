@@ -1,0 +1,10 @@
+{"p": 0.6924982112289987, "tok_in": 308, "tok_out": 1, "wall": 5.016, "done": "length", "mass": 0.9985, "id": "BigCodeBench/0", "judge": "coder3", "model": "qwen2.5-coder:3b", "think": false}
+{"p": 0.7783035921445877, "tok_in": 253, "tok_out": 1, "wall": 0.699, "done": "length", "mass": 0.999, "id": "BigCodeBench/4", "judge": "coder3", "model": "qwen2.5-coder:3b", "think": false}
+{"p": 0.7418358650613616, "tok_in": 391, "tok_out": 1, "wall": 1.025, "done": "length", "mass": 0.9989, "id": "BigCodeBench/16", "judge": "coder3", "model": "qwen2.5-coder:3b", "think": false}
+{"p": 0.785251569914416, "tok_in": 278, "tok_out": 1, "wall": 0.693, "done": "length", "mass": 0.999, "id": "BigCodeBench/29", "judge": "coder3", "model": "qwen2.5-coder:3b", "think": false}
+{"p": 0.7671981394790995, "tok_in": 293, "tok_out": 1, "wall": 0.773, "done": "length", "mass": 0.9989, "id": "BigCodeBench/32", "judge": "coder3", "model": "qwen2.5-coder:3b", "think": false}
+{"p": 0.6321511815393607, "tok_in": 467, "tok_out": 1, "wall": 1.196, "done": "length", "mass": 0.998, "id": "BigCodeBench/36", "judge": "coder3", "model": "qwen2.5-coder:3b", "think": false}
+{"p": 0.7875486843310534, "tok_in": 334, "tok_out": 1, "wall": 0.858, "done": "length", "mass": 0.999, "id": "BigCodeBench/110", "judge": "coder3", "model": "qwen2.5-coder:3b", "think": false}
+{"p": 0.7744593319896814, "tok_in": 388, "tok_out": 1, "wall": 1.024, "done": "length", "mass": 0.999, "id": "BigCodeBench/123", "judge": "coder3", "model": "qwen2.5-coder:3b", "think": false}
+{"p": 0.6740392698556827, "tok_in": 414, "tok_out": 1, "wall": 1.106, "done": "length", "mass": 0.9986, "id": "BigCodeBench/131", "judge": "coder3", "model": "qwen2.5-coder:3b", "think": false}
+{"p": 0.7905846255599681, "tok_in": 357, "tok_out": 1, "wall": 0.939, "done": "length", "mass": 0.9989, "id": "BigCodeBench/154", "judge": "coder3", "model": "qwen2.5-coder:3b", "think": false}

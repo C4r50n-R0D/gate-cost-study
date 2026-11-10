@@ -1,0 +1,10 @@
+{"p": 0.9579120499035327, "tok_in": 366, "tok_out": 1, "wall": 9.58, "done": "length", "mass": 1.0, "id": "BigCodeBench/0", "judge": "gemma", "model": "gemma4:12b", "think": false}
+{"p": 0.9999417057439144, "tok_in": 285, "tok_out": 1, "wall": 2.812, "done": "length", "mass": 1.0, "id": "BigCodeBench/4", "judge": "gemma", "model": "gemma4:12b", "think": false}
+{"p": 0.106690625304667, "tok_in": 475, "tok_out": 1, "wall": 4.769, "done": "length", "mass": 1.0, "id": "BigCodeBench/16", "judge": "gemma", "model": "gemma4:12b", "think": false}
+{"p": 0.7310583794136611, "tok_in": 315, "tok_out": 1, "wall": 3.108, "done": "length", "mass": 1.0, "id": "BigCodeBench/29", "judge": "gemma", "model": "gemma4:12b", "think": false}
+{"p": 0.9999573499803518, "tok_in": 333, "tok_out": 1, "wall": 3.429, "done": "length", "mass": 1.0, "id": "BigCodeBench/32", "judge": "gemma", "model": "gemma4:12b", "think": false}
+{"p": 1.4471569550253093e-10, "tok_in": 551, "tok_out": 1, "wall": 5.807, "done": "length", "mass": 1.0, "id": "BigCodeBench/36", "judge": "gemma", "model": "gemma4:12b", "think": false}
+{"p": 0.0420877010999909, "tok_in": 395, "tok_out": 1, "wall": 4.211, "done": "length", "mass": 1.0, "id": "BigCodeBench/110", "judge": "gemma", "model": "gemma4:12b", "think": false}
+{"p": 2.335592957611079e-09, "tok_in": 461, "tok_out": 1, "wall": 5.036, "done": "length", "mass": 1.0, "id": "BigCodeBench/123", "judge": "gemma", "model": "gemma4:12b", "think": false}
+{"p": 0.8519527166460591, "tok_in": 468, "tok_out": 1, "wall": 5.782, "done": "length", "mass": 1.0, "id": "BigCodeBench/131", "judge": "gemma", "model": "gemma4:12b", "think": false}
+{"p": 0.0002611901599160957, "tok_in": 414, "tok_out": 1, "wall": 4.924, "done": "length", "mass": 1.0, "id": "BigCodeBench/154", "judge": "gemma", "model": "gemma4:12b", "think": false}

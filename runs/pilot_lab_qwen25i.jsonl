@@ -1,0 +1,10 @@
+{"p": 0.10517238651962837, "tok_in": 308, "tok_out": 1, "wall": 6.059, "done": "length", "mass": 1.0, "id": "BigCodeBench/0", "judge": "qwen25i", "model": "qwen2.5:7b-instruct", "think": false}
+{"p": 0.9999925567217204, "tok_in": 253, "tok_out": 1, "wall": 1.552, "done": "length", "mass": 1.0, "id": "BigCodeBench/4", "judge": "qwen25i", "model": "qwen2.5:7b-instruct", "think": false}
+{"p": 0.9999309541757859, "tok_in": 391, "tok_out": 1, "wall": 2.409, "done": "length", "mass": 1.0, "id": "BigCodeBench/16", "judge": "qwen25i", "model": "qwen2.5:7b-instruct", "think": false}
+{"p": 0.9957345597649535, "tok_in": 278, "tok_out": 1, "wall": 1.652, "done": "length", "mass": 1.0, "id": "BigCodeBench/29", "judge": "qwen25i", "model": "qwen2.5:7b-instruct", "think": false}
+{"p": 0.9999310925500692, "tok_in": 293, "tok_out": 1, "wall": 1.872, "done": "length", "mass": 1.0, "id": "BigCodeBench/32", "judge": "qwen25i", "model": "qwen2.5:7b-instruct", "think": false}
+{"p": 9.416208867370724e-05, "tok_in": 467, "tok_out": 1, "wall": 2.945, "done": "length", "mass": 1.0, "id": "BigCodeBench/36", "judge": "qwen25i", "model": "qwen2.5:7b-instruct", "think": false}
+{"p": 0.9999372316290022, "tok_in": 334, "tok_out": 1, "wall": 2.114, "done": "length", "mass": 1.0, "id": "BigCodeBench/110", "judge": "qwen25i", "model": "qwen2.5:7b-instruct", "think": false}
+{"p": 0.9999614100466636, "tok_in": 388, "tok_out": 1, "wall": 2.533, "done": "length", "mass": 1.0, "id": "BigCodeBench/123", "judge": "qwen25i", "model": "qwen2.5:7b-instruct", "think": false}
+{"p": 0.9954606584188519, "tok_in": 414, "tok_out": 1, "wall": 2.752, "done": "length", "mass": 1.0, "id": "BigCodeBench/131", "judge": "qwen25i", "model": "qwen2.5:7b-instruct", "think": false}
+{"p": 0.9986249994217582, "tok_in": 357, "tok_out": 1, "wall": 2.342, "done": "length", "mass": 1.0, "id": "BigCodeBench/154", "judge": "qwen25i", "model": "qwen2.5:7b-instruct", "think": false}

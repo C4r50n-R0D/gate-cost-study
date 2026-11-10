@@ -1,0 +1,1 @@
+for j in tev llama coder1.5 coder3 coder7 coder14 qwen25i qwen35 gemma; do s=$(date +%s); python3 code/label.py runs/pilot_stim.jsonl runs/pilot_lab_$j.jsonl --judge $j 2>&1 | tail -1 | cut -c1-160; echo "$j $(( $(date +%s)-s ))s"; done

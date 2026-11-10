@@ -1,7 +1,7 @@
 pilot/*.gz
 pilot/probe1.jsonl
 pilot/probe1.log
-runs/
+runs/results_interim.json
 data/tasks.jsonl
 *.pyc
 __pycache__/

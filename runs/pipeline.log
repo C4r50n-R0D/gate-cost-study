@@ -1,0 +1,87 @@
+2026-11-07 14:01:28 STAGE cal
+2026-11-07 14:01:28 $ python3 code/gen_drafts.py data/tasks.jsonl runs/cal/drafts.jsonl --split cal --model qwen2...
+2026-11-07 14:01:28 $ ssh homelab 'mkdir -p research/gate-cost/runs/cal'
+2026-11-07 14:01:28 $ scp -q runs/score/cal/samples.jsonl homelab:research/gate-cost/runs/cal/
+2026-11-07 14:01:30 $ ssh homelab 'cd research/gate-cost && sh score_bcb.sh $HOME/research/gate-cost/runs/cal samples.jsonl > $HOME/research/gate-cost/runs/cal/score.log 2>&1'
+2026-11-07 16:09:35 $ scp -q homelab:research/gate-cost/runs/cal/samples_eval_results.json homelab:research/gate-cost/runs/cal/score.log runs/score/cal/
+2026-11-07 16:09:38 $ python3 code/label.py runs/cal/stim.jsonl runs/cal/lab_tev.jsonl --judge tev
+2026-11-07 16:21:00 $ python3 code/label.py runs/cal/stim.jsonl runs/cal/lab_llama.jsonl --judge llama
+2026-11-07 16:42:02 $ python3 code/label.py runs/cal/stim.jsonl runs/cal/lab_gemma.jsonl --judge gemma
+2026-11-07 17:22:10 $ python3 code/label.py runs/cal/stim.jsonl runs/cal/lab_qwen35.jsonl --judge qwen35
+2026-11-07 17:50:11 $ python3 code/label.py runs/cal/stim.jsonl runs/cal/lab_qwen25i.jsonl --judge qwen25i
+2026-11-07 18:10:36 $ python3 code/label.py runs/cal/stim.jsonl runs/cal/lab_coder1.5.jsonl --judge coder1.5
+2026-11-07 18:14:38 $ python3 code/label.py runs/cal/stim.jsonl runs/cal/lab_coder3.jsonl --judge coder3
+2026-11-07 18:23:06 $ python3 code/label.py runs/cal/stim.jsonl runs/cal/lab_coder7.jsonl --judge coder7
+2026-11-07 18:43:09 $ python3 code/label.py runs/cal/stim.jsonl runs/cal/lab_coder14.jsonl --judge coder14
+2026-11-07 19:26:33 DONE cal
+2026-11-07 19:26:33 STAGE thresholds
+2026-11-07 19:26:33 $ ollama list
+2026-11-07 19:26:33 {"tev": {"tau": 0.8070843644709045, "false_rejection": 0.29357798165137616, "n": 109}, "llama": {"tau": 0.26215737529463223, "false_rejection": 0.29357798165137616, "n": 109}, "gemma": {"tau": 0.037326932659425986, "false_rejection": 0.29357798165137616, "n": 109}, "qwen35": {"tau": 0.32796655583801676, "false_rejection": 0.29357798165137616, "n": 109}, "qwen25i": {"tau": 0.9919316613090835, "false_rejection": 0.29357798165137616, "n": 109}, "coder1.5": {"tau": 0.8124359079044035, "false_rejection": 0.29357798165137616, "n": 109}, "coder3": {"tau": 0.7179165853764946, "false_rejection": 0.29357798165137616, "n": 109}, "coder7": {"tau": 0.8883370631676798, "false_rejection": 0.29357798165137616, "n": 109}, "coder14": {"tau": 0.7973958610975868, "false_rejection": 0.29357798165137616, "n": 109}}
+2026-11-07 19:26:33 $ cd . && git add data/thresholds.json code && git commit -q -m 'Frozen thresholds from calibration, before any test-split row
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.co...
+2026-11-07 19:26:34 DONE thresholds
+2026-11-07 19:26:34 STAGE testdrafts
+2026-11-07 19:26:34 $ python3 code/gen_drafts.py data/tasks.jsonl runs/test/drafts.jsonl --split test --model qwe...
+2026-11-07 20:10:02 $ python3 code/gen_drafts.py data/tasks.jsonl runs/test/stageA.jsonl --split test --model qwe...
+2026-11-07 20:31:27 DONE testdrafts
+2026-11-07 20:31:27 STAGE score_test
+2026-11-07 20:31:27 $ ssh homelab 'mkdir -p research/gate-cost/runs/test_clean'
+2026-11-07 20:31:28 $ scp -q runs/score/test_clean/samples.jsonl homelab:research/gate-cost/runs/test_clean/
+2026-11-07 20:31:29 $ ssh homelab 'cd research/gate-cost && sh score_bcb.sh $HOME/research/gate-cost/runs/test_clean samples.jsonl > $HOME/research/gate-cost/runs/test_clean/score.log 2>&1'
+2026-11-07 20:35:56 $ scp -q homelab:research/gate-cost/runs/test_clean/samples_eval_results.json homelab:research/gate-cost/runs/test_clean/score.log runs/score/test_clean/
+2026-11-07 20:35:58 $ ssh homelab 'mkdir -p research/gate-cost/runs/test_stageA'
+2026-11-07 20:35:59 $ scp -q runs/score/test_stageA/samples.jsonl homelab:research/gate-cost/runs/test_stageA/
+2026-11-07 20:36:00 $ ssh homelab 'cd research/gate-cost && sh score_bcb.sh $HOME/research/gate-cost/runs/test_stageA samples.jsonl > $HOME/research/gate-cost/runs/test_stageA/score.log 2>&1'
+2026-11-07 20:40:36 $ scp -q homelab:research/gate-cost/runs/test_stageA/samples_eval_results.json homelab:research/gate-cost/runs/test_stageA/score.log runs/score/test_stageA/
+2026-11-07 20:40:38 $ ssh homelab 'mkdir -p research/gate-cost/runs/test_canon'
+2026-11-07 20:40:39 $ scp -q runs/score/test_canon/samples.jsonl homelab:research/gate-cost/runs/test_canon/
+2026-11-07 20:40:40 $ ssh homelab 'cd research/gate-cost && sh score_bcb.sh $HOME/research/gate-cost/runs/test_canon samples.jsonl > $HOME/research/gate-cost/runs/test_canon/score.log 2>&1'
+2026-11-07 20:43:24 $ scp -q homelab:research/gate-cost/runs/test_canon/samples_eval_results.json homelab:research/gate-cost/runs/test_canon/score.log runs/score/test_canon/
+2026-11-07 20:43:27 DONE score_test
+2026-11-07 20:43:27 STAGE corpus
+2026-11-07 20:43:27 $ ssh homelab 'mkdir -p research/gate-cost/runs/test_check_string'
+2026-11-07 20:43:27 $ scp -q runs/score/test_check_string/samples.jsonl homelab:research/gate-cost/runs/test_check_string/
+2026-11-07 20:43:28 $ ssh homelab 'cd research/gate-cost && sh score_bcb.sh $HOME/research/gate-cost/runs/test_check_string samples.jsonl > $HOME/research/gate-cost/runs/test_check_string/score.log 2>&1'
+2026-11-07 20:44:43 $ scp -q homelab:research/gate-cost/runs/test_check_string/samples_eval_results.json homelab:research/gate-cost/runs/test_check_string/score.log runs/score/test_check_string/
+2026-11-07 20:44:45 $ ssh homelab 'mkdir -p research/gate-cost/runs/test_check_identifier'
+2026-11-07 20:44:46 $ scp -q runs/score/test_check_identifier/samples.jsonl homelab:research/gate-cost/runs/test_check_identifier/
+2026-11-07 20:44:46 $ ssh homelab 'cd research/gate-cost && sh score_bcb.sh $HOME/research/gate-cost/runs/test_check_identifier samples.jsonl > $HOME/research/gate-cost/runs/test_check_identifier/score.log 2>&1'
+2026-11-07 20:45:45 $ scp -q homelab:research/gate-cost/runs/test_check_identifier/samples_eval_results.json homelab:research/gate-cost/runs/test_check_identifier/score.log runs/score/test_check_iden...
+2026-11-07 20:45:48 rescoring verdict changes {'string': 0, 'identifier': 0}
+2026-11-07 20:45:48 DONE corpus
+2026-11-07 20:45:48 STAGE panel
+2026-11-07 20:45:48 $ python3 code/label.py runs/test/stim.jsonl runs/test/lab_tev.jsonl --judge tev
+2026-11-07 21:32:17 STAGE panel
+2026-11-07 21:32:17 $ python3 code/label.py runs/test/stim.jsonl runs/test/lab_tev.jsonl --judge tev
+2026-11-07 21:45:45 $ python3 code/label.py runs/test/stim.jsonl runs/test/lab_llama.jsonl --judge llama
+2026-11-07 23:10:32 $ python3 code/label.py runs/test/stim.jsonl runs/test/lab_gemma.jsonl --judge gemma
+2026-11-08 01:46:18 $ python3 code/label.py runs/test/stim.jsonl runs/test/lab_qwen35.jsonl --judge qwen35
+2026-11-08 03:54:41 $ python3 code/label.py runs/test/stim.jsonl runs/test/lab_qwen25i.jsonl --judge qwen25i
+2026-11-08 05:01:27 $ python3 code/label.py runs/test/stim.jsonl runs/test/lab_coder1.5.jsonl --judge coder1.5
+2026-11-08 05:14:10 $ python3 code/label.py runs/test/stim.jsonl runs/test/lab_coder3.jsonl --judge coder3
+2026-11-08 05:41:05 $ python3 code/label.py runs/test/stim.jsonl runs/test/lab_coder7.jsonl --judge coder7
+2026-11-08 06:45:08 $ python3 code/label.py runs/test/stim.jsonl runs/test/lab_coder14.jsonl --judge coder14
+2026-11-08 12:32:33 STAGE panel
+2026-11-08 12:32:33 $ python3 code/label.py runs/test/stim.jsonl runs/test/lab_tev.jsonl --judge tev
+2026-11-08 12:32:33 $ python3 code/label.py runs/test/stim.jsonl runs/test/lab_llama.jsonl --judge llama
+2026-11-08 12:32:34 $ python3 code/label.py runs/test/stim.jsonl runs/test/lab_gemma.jsonl --judge gemma
+2026-11-08 12:32:34 $ python3 code/label.py runs/test/stim.jsonl runs/test/lab_qwen35.jsonl --judge qwen35
+2026-11-08 12:32:35 $ python3 code/label.py runs/test/stim.jsonl runs/test/lab_qwen25i.jsonl --judge qwen25i
+2026-11-08 12:32:35 $ python3 code/label.py runs/test/stim.jsonl runs/test/lab_coder1.5.jsonl --judge coder1.5
+2026-11-08 12:32:35 $ python3 code/label.py runs/test/stim.jsonl runs/test/lab_coder3.jsonl --judge coder3
+2026-11-08 12:32:36 $ python3 code/label.py runs/test/stim.jsonl runs/test/lab_coder7.jsonl --judge coder7
+2026-11-08 12:32:36 $ python3 code/label.py runs/test/stim.jsonl runs/test/lab_coder14.jsonl --judge coder14
+2026-11-08 13:19:31 DONE panel
+2026-11-08 13:19:31 STAGE strong
+2026-11-08 13:19:32 $ python3 code/gen_drafts.py data/tasks.jsonl runs/test/strong.jsonl --split test --model qwe...
+2026-11-08 14:28:42 $ ssh homelab 'mkdir -p research/gate-cost/runs/test_strong'
+2026-11-08 14:28:43 $ scp -q runs/score/test_strong/samples.jsonl homelab:research/gate-cost/runs/test_strong/
+2026-11-08 14:28:44 $ ssh homelab 'cd research/gate-cost && sh score_bcb.sh $HOME/research/gate-cost/runs/test_strong samples.jsonl > $HOME/research/gate-cost/runs/test_strong/score.log 2>&1'
+2026-11-08 14:30:02 $ scp -q homelab:research/gate-cost/runs/test_strong/samples_eval_results.json homelab:research/gate-cost/runs/test_strong/score.log runs/score/test_strong/
+2026-11-08 14:30:05 DONE strong
+2026-11-08 16:16:52 STAGE think
+2026-11-08 16:16:52 $ python3 code/label.py runs/test/stim_think.jsonl runs/test/think_qwen35.jsonl --judge qwen3...
+2026-11-08 23:47:36 STAGE think
+2026-11-08 23:47:36 $ python3 code/label.py runs/test/stim_think.jsonl runs/test/think_qwen35.jsonl --judge qwen3...
+2026-11-09 00:31:34 DONE think

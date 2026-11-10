@@ -1,0 +1,10 @@
+{"p": 0.8779231203277792, "tok_in": 435, "tok_out": 0, "wall": 4.843, "done": "stop", "id": "BigCodeBench/0", "judge": "tev", "model": "tev1:4b", "think": false}
+{"p": 0.9611810146240868, "tok_in": 369, "tok_out": 0, "wall": 1.404, "done": "stop", "id": "BigCodeBench/4", "judge": "tev", "model": "tev1:4b", "think": false}
+{"p": 0.8527341553251959, "tok_in": 534, "tok_out": 0, "wall": 1.864, "done": "stop", "id": "BigCodeBench/16", "judge": "tev", "model": "tev1:4b", "think": false}
+{"p": 0.8390314414855704, "tok_in": 400, "tok_out": 0, "wall": 1.391, "done": "stop", "id": "BigCodeBench/29", "judge": "tev", "model": "tev1:4b", "think": false}
+{"p": 0.9341563552828044, "tok_in": 415, "tok_out": 0, "wall": 1.399, "done": "stop", "id": "BigCodeBench/32", "judge": "tev", "model": "tev1:4b", "think": false}
+{"p": 0.22961010507616314, "tok_in": 602, "tok_out": 0, "wall": 2.099, "done": "stop", "id": "BigCodeBench/36", "judge": "tev", "model": "tev1:4b", "think": false}
+{"p": 0.9624923013537897, "tok_in": 480, "tok_out": 0, "wall": 1.632, "done": "stop", "id": "BigCodeBench/110", "judge": "tev", "model": "tev1:4b", "think": false}
+{"p": 0.03272133393921554, "tok_in": 521, "tok_out": 0, "wall": 1.756, "done": "stop", "id": "BigCodeBench/123", "judge": "tev", "model": "tev1:4b", "think": false}
+{"p": 0.2622472788320493, "tok_in": 542, "tok_out": 0, "wall": 1.865, "done": "stop", "id": "BigCodeBench/131", "judge": "tev", "model": "tev1:4b", "think": false}
+{"p": 0.5664485904797468, "tok_in": 484, "tok_out": 0, "wall": 1.64, "done": "stop", "id": "BigCodeBench/154", "judge": "tev", "model": "tev1:4b", "think": false}
