@@ -128,7 +128,7 @@ The primary outcomes were (1) the Stage A carry-through rate with a Wilson inter
 
 \subsection{Transparency}\label{sec:transparency}
 
-The pre-registration, code and split were pushed to a public GitHub repository, which GitHub records as created at 16:52 UTC on 7 November 2026; no calibration label or test row existed then. Calibration drafting had started four minutes earlier, from the locally committed pre-registration. Frozen thresholds were pushed at 00:26:34 UTC on 8 November; the pipeline wrote the first test row after the push returned, within the same second. Changes made after registration are listed in Appendix~\ref{sec:deviations}. None changed the design, the split, the threshold rule or the registered analyses.
+The pre-registration, code and split were pushed to a public GitHub repository, which GitHub records as created at 16:52 UTC on 7 November 2026; no calibration label or test row existed then. Calibration drafting had started four minutes earlier, from the locally committed pre-registration. Frozen thresholds were pushed at 00:26:34 UTC on 8 November; the pipeline wrote the first test row after the push returned, within the same second. Changes made after registration are listed in \texttt{design/DEVIATIONS.md} in the replication package. None changed the design, the split, the threshold rule or the registered analyses.
 
 \subsection{Use of AI tools}\label{sec:ai}
 
@@ -282,17 +282,6 @@ Injected text did not travel through repository context into a small drafter's c
 
 \paragraph{Author contributions} Carson Rodriguez conceived and directed the study, made the pre-registered design and approval decisions, and read and approved the final manuscript. The use of AI tools in this work is documented in Section~\ref{sec:ai}.
 
-\appendix
-\section{Changes after registration}\label{sec:deviations}
-
-The full log is \texttt{design/DEVIATIONS.md} in the replication package.
-\begin{enumerate}
-\item The draft generator gained options to generate for a fixed task list and to prepend the registered Stage A contexts; a pipeline script was added to run the registered stages in order and resume after interruption.
-\item A path error in the first calibration scoring call stopped the scorer before it ran; the log path was corrected. No results had been produced.
-\item The registration did not specify how a label without a YES or NO probability would be treated. Both treatments were planned; no such label occurred.
-\item Analysis choices the registration left open: the per-task difference averages the five types with their matched neutral; cascade cost uses tokens times parameter count; the mixed model was fitted by variational Bayes.
-\item Section~\ref{sec:neutral} and Section~\ref{sec:exploratory} are post hoc.
-\end{enumerate}
 
 \bibliographystyle{spbasic}
 \bibliography{refs}
