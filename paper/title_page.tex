@@ -1,0 +1,45 @@
+\RequirePackage{fix-cm}
+\documentclass[smallextended]{svjour3}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathptmx}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{url}
+\usepackage{adjustbox}
+\usepackage{booktabs}
+\usepackage{natbib}
+\setcitestyle{aysep={}}
+\emergencystretch=1.5em
+\providecommand{\doi}[1]{\url{https://doi.org/#1}}
+\renewcommand{\doi}[1]{\url{https://doi.org/#1}}
+\newcommand{\zenodo}{\url{https://doi.org/10.5281/zenodo.XXXXXXXX}}
+\journalname{Empirical Software Engineering}
+\makeatletter\def\makeheadbox{}\makeatother
+\begin{document}
+\title{What Does Injected Text Cost a Judge-Gated Code Cascade?}
+\subtitle{A Pre-Registered Study of Verdict and Compute Effects on Nine Local LLM Judges}
+\titlerunning{What Does Injected Text Cost a Judge-Gated Code Cascade?}
+\author{Carson Rodriguez}
+\authorrunning{C. Rodriguez}
+\institute{C. Rodriguez (corresponding author) \at
+  Independent researcher, Arlington, VA, USA \\
+  \email{carsonrodriguez74@gmail.com}}
+\date{November 2026}
+\maketitle
+\section*{Statements and Declarations}
+\paragraph{Funding} No funding was received for conducting this study. All models ran on the author's own hardware.
+
+\paragraph{Competing interests} The author has no competing interests to declare that are relevant to the content of this article.
+
+\paragraph{Ethics approval} Not applicable. This study involved no human participants and no animals. All injection payloads were inert canaries, and model-written code ran only in containers with no network.
+
+\paragraph{Consent to participate and to publish} Not applicable.
+
+\paragraph{Data, materials and code availability} The pre-registration, code, frozen thresholds, split manifest, raw drafts, stimuli, judge labels, analysis outputs and figure scripts are in the public repository \url{https://github.com/C4r50n-R0D/gate-cost-study} and archived in the replication package at Zenodo, \zenodo{}. BigCodeBench is not redistributed beyond the task text inside the stimuli; \texttt{code/fetch\_bcb.sh} fetches it at a pinned revision and checks its SHA-256. Model digests are given in Table 1 of the manuscript.
+
+\paragraph{Use of AI tools} Documented in Section 3.10 of the manuscript.
+
+\paragraph{Author contributions} Carson Rodriguez conceived and directed the study, made the pre-registered design and approval decisions, and read and approved the final manuscript. The use of AI tools in this work is documented in Section 3.10 of the manuscript.
+
+\end{document}

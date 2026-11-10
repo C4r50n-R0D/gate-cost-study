@@ -5,3 +5,11 @@ runs/
 data/tasks.jsonl
 *.pyc
 __pycache__/
+data/bcb*.jsonl
+.DS_Store
+paper/bibcheck/
+paper/*.aux
+paper/*.log
+paper/*.blg
+READY_TO_UPLOAD/
+paper/*.pdf

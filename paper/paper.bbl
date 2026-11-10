@@ -1,0 +1,248 @@
+\begin{thebibliography}{41}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{DOI~\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{DOI~\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem[{Greshake et~al.(2023)Greshake, Abdelnabi, Mishra, Endres, Holz, and
+  Fritz}]{greshake2023indirect}
+Greshake K, Abdelnabi S, Mishra S, Endres C, Holz T, Fritz M (2023) Not what
+  you've signed up for: Compromising real-world {LLM}-integrated applications
+  with indirect prompt injection. arXiv preprint
+  \doi{10.48550/arXiv.2302.12173}
+
+\bibitem[{Huang et~al.(2024)Huang, Bu, Zhou, Qu, Liu, Yang, Xu, and
+  Zhao}]{huang2024finetuned}
+Huang H, Bu X, Zhou H, Qu Y, Liu J, Yang M, Xu B, Zhao T (2024) An empirical
+  study of {LLM-as-a-Judge} for {LLM} evaluation: Fine-tuned judge model is not
+  a general substitute for {GPT-4}. arXiv preprint
+  \doi{10.48550/arXiv.2403.02839}
+
+\bibitem[{Hui et~al.(2024)Hui, Yang, Cui, Yang, Liu, Zhang, Liu, Zhang, Yu, Lu,
+  Dang, Fan, Zhang, Yang, Men, Huang, Zheng, Miao, Quan, Feng, Ren, Ren, Zhou,
+  and Lin}]{hui2024qwen}
+Hui B, Yang J, Cui Z, Yang J, Liu D, Zhang L, Liu T, Zhang J, Yu B, Lu K, Dang
+  K, Fan Y, Zhang Y, Yang A, Men R, Huang F, Zheng B, Miao Y, Quan S, Feng Y,
+  Ren X, Ren X, Zhou J, Lin J (2024) Qwen2.5-coder technical report. arXiv
+  preprint \doi{10.48550/arXiv.2409.12186}
+
+\bibitem[{Isbarov et~al.(2026)Isbarov, Suleymanov, Shumailov, and
+  Kantarcioglu}]{isbarov2026gitinject}
+Isbarov J, Suleymanov U, Shumailov I, Kantarcioglu M (2026) {GitInject}:
+  Real-world prompt injection attacks in {AI-Powered} {CI}/{CD} pipelines.
+  arXiv preprint \doi{10.48550/arXiv.2606.09935}
+
+\bibitem[{Jin and Chen(2026)}]{jin2026overcorrection}
+Jin H, Chen H (2026) Are {LLMs} reliable code reviewers? systematic
+  overcorrection in requirement conformance judgement. arXiv preprint
+  \doi{10.48550/arXiv.2603.00539}
+
+\bibitem[{Jung et~al.(2024)Jung, Brahman, and Choi}]{jung2024trust}
+Jung J, Brahman F, Choi Y (2024) Trust or escalate: {LLM} judges with provable
+  guarantees for human agreement. arXiv preprint
+  \doi{10.48550/arXiv.2407.18370}
+
+\bibitem[{Kumar et~al.(2025)Kumar, Roh, Naseh, Karpinska, Iyyer, Houmansadr,
+  and Bagdasarian}]{kumar2025overthink}
+Kumar A, Roh J, Naseh A, Karpinska M, Iyyer M, Houmansadr A, Bagdasarian E
+  (2025) {OverThink}: Slowdown attacks on reasoning {LLMs}. arXiv preprint
+  \doi{10.48550/arXiv.2502.02542}
+
+\bibitem[{Lam et~al.(2025)Lam, Wang, Huang, and Lyu}]{lam2025codecrash}
+Lam MH, Wang C, Huang Jt, Lyu MR (2025) {CodeCrash}: Exposing {LLM} fragility
+  to misleading natural language in code reasoning. arXiv preprint
+  \doi{10.48550/arXiv.2504.14119}
+
+\bibitem[{Li et~al.(2025)Li, Xu, Wang, Gong, Chen, Zhang, Wang, Lam, and
+  Ji}]{li2025robustjudge}
+Li S, Xu C, Wang J, Gong X, Chen C, Zhang J, Wang J, Lam KY, Ji S (2025) {LLMs}
+  cannot reliably judge (yet?): A comprehensive assessment on the robustness of
+  {LLM-as-a-Judge}. arXiv preprint \doi{10.48550/arXiv.2506.09443}
+
+\bibitem[{Liu et~al.(2026)Liu, Zeng, Chang, and Lin}]{liu2026deferral}
+Liu Z, Zeng Y, Chang Y, Lin L (2026) Forced deferral: Manipulating routing
+  decisions in multimodal {LLM} cascades. arXiv preprint
+  \doi{10.48550/arXiv.2606.15308}
+
+\bibitem[{Maloyan and Namiot(2025)}]{maloyan2025judges}
+Maloyan N, Namiot D (2025) Adversarial attacks on {LLM-as-a-Judge} systems:
+  Insights from prompt injections. arXiv preprint
+  \doi{10.48550/arXiv.2504.18333}
+
+\bibitem[{McKenzie et~al.(2023)McKenzie, Lyzhov, Pieler, Parrish, Mueller,
+  Prabhu, McLean, Kirtland, Ross, Liu, Gritsevskiy, Wurgaft, Kauffman, Recchia,
+  Liu, Cavanagh, Weiss, Huang, Droid, Tseng, Korbak, Shen, Zhang, Zhou, Kim,
+  Bowman, and Perez}]{mckenzie2023inverse}
+McKenzie IR, Lyzhov A, Pieler M, Parrish A, Mueller A, Prabhu A, McLean E,
+  Kirtland A, Ross A, Liu A, Gritsevskiy A, Wurgaft D, Kauffman D, Recchia G,
+  Liu J, Cavanagh J, Weiss M, Huang S, Droid TF, Tseng T, Korbak T, Shen X,
+  Zhang Y, Zhou Z, Kim N, Bowman SR, Perez E (2023) Inverse scaling: When
+  bigger isn't better. arXiv preprint \doi{10.48550/arXiv.2306.09479}
+
+\bibitem[{Moon et~al.(2025)Moon, Hwang, Lee, Kang, Kim, and
+  Jung}]{moon2025cover}
+Moon J, Hwang Y, Lee D, Kang T, Kim Y, Jung K (2025) Don't judge code by its
+  cover: Exploring biases in {LLM} judges for code evaluation. arXiv preprint
+  \doi{10.48550/arXiv.2505.16222}
+
+\bibitem[{{Ollama}(2026)}]{ollamatev1}
+{Ollama} (2026) tev1 model library page.
+  \urlprefix\url{https://ollama.com/library/tev1}, accessed 9 November 2026
+
+\bibitem[{Panickssery et~al.(2024)Panickssery, Bowman, and
+  Feng}]{panickssery2024self}
+Panickssery A, Bowman SR, Feng S (2024) {LLM} evaluators recognize and favor
+  their own generations. arXiv preprint \doi{10.48550/arXiv.2404.13076}
+
+\bibitem[{Pombal et~al.(2026)Pombal, Rei, and Martins}]{pombal2026rubric}
+Pombal J, Rei R, Martins AFT (2026) Self-preference bias in rubric-based
+  evaluation of large language models. arXiv preprint
+  \doi{10.48550/arXiv.2604.06996}
+
+\bibitem[{Raina et~al.(2024)Raina, Liusie, and Gales}]{raina2024universal}
+Raina V, Liusie A, Gales M (2024) Is {LLM-as-a-Judge} robust? investigating
+  universal adversarial attacks on zero-shot {LLM} assessment. arXiv preprint
+  \doi{10.48550/arXiv.2402.14016}
+
+\bibitem[{Rajput et~al.(2026)Rajput, Chauhan, and Kosaraju}]{rajput2026cheap}
+Rajput D, Chauhan N, Kosaraju S (2026) Cheap verifiers, large blind spots:
+  Measuring the reliability cost of cost-saving cascades. arXiv preprint
+  \doi{10.48550/arXiv.2609.01345}
+
+\bibitem[{Rodriguez(2026{\natexlab{a}})}]{rodriguez2026escalation}
+Rodriguez C (2026{\natexlab{a}}) Replication package for: Does an outcome-blind
+  judge save compute? a pre-registered study of escalation between local code
+  models. \doi{10.5281/zenodo.23968040},
+  \urlprefix\url{https://doi.org/10.5281/zenodo.23968040}
+
+\bibitem[{Rodriguez(2026{\natexlab{b}})}]{rodriguez2026gatecost}
+Rodriguez C (2026{\natexlab{b}}) Replication package for: What does injected
+  text cost a judge-gated code cascade?
+  \urlprefix\url{https://github.com/C4r50n-R0D/gate-cost-study}, dOI to be
+  added at deposit
+
+\bibitem[{Sahoo et~al.(2026)Sahoo, Prasad, Majhi, Neekhra, Sinha, Mandal,
+  Chamola, and Kumar}]{sahoo2026compliance}
+Sahoo D, Prasad M, Majhi V, Neekhra A, Sinha Y, Mandal M, Chamola V, Kumar D
+  (2026) The compliance paradox: Semantic-instruction decoupling in automated
+  academic code evaluation. arXiv preprint \doi{10.48550/arXiv.2601.21360}
+
+\bibitem[{Shafran et~al.(2025)Shafran, Schuster, Ristenpart, and
+  Shmatikov}]{shafran2025rerouting}
+Shafran A, Schuster R, Ristenpart T, Shmatikov V (2025) Rerouting {LLM}
+  routers. arXiv preprint \doi{10.48550/arXiv.2501.01818}
+
+\bibitem[{Shi et~al.(2024)Shi, Yuan, Liu, Huang, Zhou, Sun, and
+  Gong}]{shi2024judgedeceiver}
+Shi J, Yuan Z, Liu Y, Huang Y, Zhou P, Sun L, Gong NZ (2024) Optimization-based
+  prompt injection attack to {LLM-as-a-Judge}. arXiv preprint
+  \doi{10.48550/arXiv.2403.17710}
+
+\bibitem[{Sun et~al.(2026)Sun, Chen, and Li}]{sun2026backfires}
+Sun Z, Chen D, Li S (2026) When efficiency backfires: Cascading {LLMs} trigger
+  cascade failure under adversarial attack. arXiv preprint
+  \doi{10.48550/arXiv.2605.17288}
+
+\bibitem[{Thornton(2026)}]{thornton2026comments}
+Thornton S (2026) Can adversarial code comments fool {AI} security reviewers:
+  Large-scale empirical study of comment-based attacks and defenses against
+  {LLM} code analysis. arXiv preprint \doi{10.48550/arXiv.2602.16741}
+
+\bibitem[{Ullah et~al.(2023)Ullah, Han, Pujar, Pearce, Coskun, and
+  Stringhini}]{ullah2023secllmholmes}
+Ullah S, Han M, Pujar S, Pearce H, Coskun A, Stringhini G (2023) {LLMs} cannot
+  reliably identify and reason about security vulnerabilities (yet?): A
+  comprehensive evaluation, framework, and benchmarks. arXiv preprint
+  \doi{10.48550/arXiv.2312.12575}
+
+\bibitem[{Wataoka et~al.(2024)Wataoka, Takahashi, and Ri}]{wataoka2024selfpref}
+Wataoka K, Takahashi T, Ri R (2024) Self-preference bias in {LLM-as-a-Judge}.
+  arXiv preprint \doi{10.48550/arXiv.2410.21819}
+
+\bibitem[{Wei et~al.(2022)Wei, Kim, Tay, and Le}]{wei2022ushaped}
+Wei J, Kim N, Tay Y, Le QV (2022) Inverse scaling can become u-shaped. arXiv
+  preprint \doi{10.48550/arXiv.2211.02011}
+
+\bibitem[{Wu and Nita-Rotaru(2026)}]{wu2026alibi}
+Wu Z, Nita-Rotaru C (2026) {ALIBI}: Adaptive agentic attacks on {LLM-Based}
+  vulnerability detectors via adversarial code comments. arXiv preprint
+  \doi{10.48550/arXiv.2607.24964}
+
+\bibitem[{Yang et~al.(2024)Yang, Li, Yao, Yang, He, Zhang, Tao, and
+  Qin}]{yang2024shadowcode}
+Yang Y, Li Y, Yao H, Yang B, He Y, Zhang T, Tao D, Qin Z (2024) {ShadowCode}:
+  Towards (automatic) external prompt injection attack against code {LLMs}.
+  arXiv preprint \doi{10.48550/arXiv.2407.09164}
+
+\bibitem[{Zeng et~al.(2025)Zeng, Zhang, Zhou, Go, Jiang, and
+  Shi}]{zeng2025hackode}
+Zeng B, Zhang Q, Zhou C, Go G, Jiang Y, Shi H (2025) Inducing vulnerable code
+  generation in {LLM} coding assistants. arXiv preprint
+  \doi{10.48550/arXiv.2504.15867}
+
+\bibitem[{Zhang et~al.(2024)Zhang, Xiong, and Mao}]{zhang2024safeguard}
+Zhang Q, Xiong Z, Mao ZM (2024) {LLM} safeguard is a double-edged sword:
+  Exploiting false positives for denial-of-service attacks. arXiv preprint
+  \doi{10.48550/arXiv.2410.02916}
+
+\bibitem[{Zhang et~al.(2025)Zhang, Xu, Cui, and Reddy}]{zhang2025distractor}
+Zhang Z, Xu W, Cui S, Reddy CK (2025) Distractor injection attacks on large
+  reasoning models: Characterization and defense. arXiv preprint
+  \doi{10.48550/arXiv.2510.16259}
+
+\bibitem[{Zhao et~al.(2026{\natexlab{a}})Zhao, Bhaskar, and
+  Dobriban}]{zhao2026livepi}
+Zhao L, Bhaskar A, Dobriban E (2026{\natexlab{a}}) {LivePI}: More realistic
+  benchmarking of agents against indirect prompt injection. arXiv preprint
+  \doi{10.48550/arXiv.2605.17986}
+
+\bibitem[{Zhao et~al.(2021)Zhao, Wallace, Feng, Klein, and
+  Singh}]{zhao2021calibrate}
+Zhao TZ, Wallace E, Feng S, Klein D, Singh S (2021) Calibrate before use:
+  Improving few-shot performance of language models. arXiv preprint
+  \doi{10.48550/arXiv.2102.09690}
+
+\bibitem[{Zhao et~al.(2025)Zhao, Liu, Yu, Kung, Chen, Mi, and
+  Yu}]{zhao2025onetoken}
+Zhao Y, Liu H, Yu D, Kung S, Chen M, Mi H, Yu D (2025) One token to fool
+  {LLM-as-a-Judge}. arXiv preprint \doi{10.48550/arXiv.2507.08794}
+
+\bibitem[{Zhao et~al.(2026{\natexlab{b}})Zhao, Esmaeili, and
+  Fard}]{zhao2026biasloop}
+Zhao Z, Esmaeili A, Fard F (2026{\natexlab{b}}) Bias in the loop: Auditing
+  {LLM-as-a-Judge} for software engineering. arXiv preprint
+  \doi{10.48550/arXiv.2604.16790}
+
+\bibitem[{Zhou et~al.(2026)Zhou, Wang, Ma, Xue, Wang, and
+  Wang}]{zhou2026shield}
+Zhou Y, Wang X, Ma P, Xue Z, Wang Z, Wang S (2026) From shield to target:
+  Denial-of-service attacks on {LLM-Based} agent guardrails. arXiv preprint
+  \doi{10.48550/arXiv.2606.14517}
+
+\bibitem[{Zhu et~al.(2026)Zhu, Zhao, Lin, He, Du, and Ji}]{zhu2026cipr}
+Zhu F, Zhao B, Lin R, He P, Du T, Ji S (2026) Beyond the payload: How user
+  invocation shapes coding agent vulnerability to repository poisoning. arXiv
+  preprint \doi{10.48550/arXiv.2608.30686}
+
+\bibitem[{Zhuo et~al.(2024)Zhuo, Vu, Chim, Hu, Yu, Widyasari, Yusuf, Zhan, He,
+  Paul, Brunner, Gong, Hoang, Zebaze, Hong, Li, Kaddour, Xu, Zhang, Yadav,
+  Jain, Gu, Cheng, Liu, Liu, Wang, Hui, Muennighoff, Lo, Fried, Du, de~Vries,
+  and Von~Werra}]{zhuo2024bigcodebench}
+Zhuo TY, Vu MC, Chim J, Hu H, Yu W, Widyasari R, Yusuf INB, Zhan H, He J, Paul
+  I, Brunner S, Gong C, Hoang T, Zebaze AR, Hong X, Li WD, Kaddour J, Xu M,
+  Zhang Z, Yadav P, Jain N, Gu A, Cheng Z, Liu J, Liu Q, Wang Z, Hui B,
+  Muennighoff N, Lo D, Fried D, Du X, de~Vries H, Von~Werra L (2024)
+  {BigCodeBench}: Benchmarking code generation with diverse function calls and
+  complex instructions. arXiv preprint \doi{10.48550/arXiv.2406.15877}
+
+\bibitem[{Štorek et~al.(2025)Štorek, Gupta, Bhatt, Gupta, Kim, Srivastava,
+  and Jana}]{storek2025xoxo}
+Štorek A, Gupta M, Bhatt N, Gupta A, Kim J, Srivastava P, Jana S (2025)
+  {XOXO}: Stealthy cross-origin context poisoning attacks against {AI} coding
+  assistants. arXiv preprint \doi{10.48550/arXiv.2503.14281}
+
+\end{thebibliography}

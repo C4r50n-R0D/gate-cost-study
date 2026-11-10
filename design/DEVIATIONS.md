@@ -31,3 +31,7 @@ Registered at commit 0b21d19 (2026-11-07 16:52 UTC). Every change after that com
 9. 2026-11-08 23:36: the battery ran out during the thinking arm (110 of 120). Resumed 23:47. Finished 2026-11-09 00:31.
 
 Every resume used the resumable writers. All saved lines were checked and parsed as valid before each resume.
+
+## Post hoc analyses
+
+10. 2026-11-09, after the final results: `code/exploratory.py` (log parameter count and a benign-probe score as predictors of the reject-direction effect, with leave-one-out error) and the neutral-versus-clean comparison in the manuscript are post hoc and labelled as such. `code/figures.py` draws the manuscript figures from `results/`.
