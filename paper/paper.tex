@@ -17,9 +17,9 @@
 \journalname{Empirical Software Engineering}
 \makeatletter\def\makeheadbox{}\makeatother
 \begin{document}
-\title{What Does Injected Text Cost a Judge-Gated Code Cascade?}
-\subtitle{A Pre-Registered Study of Verdict and Compute Effects on Nine Local LLM Judges}
-\titlerunning{What Does Injected Text Cost a Judge-Gated Code Cascade?}
+\title{When the Judge Reads the Attack}
+\subtitle{Verdict and Compute Costs of Injected Text in LLM-Gated Code Cascades}
+\titlerunning{When the Judge Reads the Attack}
 \author{Carson Rodriguez}
 \authorrunning{C. Rodriguez}
 \institute{C. Rodriguez (corresponding author) \at
@@ -28,7 +28,7 @@
 \date{November 2026}
 \maketitle
 \begin{abstract}
-A cascade in which a small code model drafts, an LLM judge reads the draft, and a larger model is called on rejection is attractive for local use, but the judge reads text an attacker may control. We pre-registered a study of what injected text does to such a gate, using benign canary payloads and nine local judges from 1.5B to 14B parameters on held-out BigCodeBench tasks. Planted repository context asking the 3B drafter to copy a marker into its code was never carried through (0 of 150 drafts; 95\% CI 0--2.5\%). Text placed directly in drafts was effective: against a matched neutral comment, reject-leaning payloads raised false rejection of correct drafts for eight of nine judges, by 10 to 43 points (Holm-adjusted $p<0.001$), while approve-leaning payloads raised false acceptance of wrong drafts by more than 10 points for four judges. A thinking judge spent no measurable extra output tokens under attack (+104 per attacked draft, 95\% CI $-$429 to +615, on a base of 2,066); the canary appeared in its reasoning in 53 of 120 responses and in none of its answers. In a replayed cascade, reject-leaning text raised compute by 3--37\% with accuracy nearly unchanged, and approve-leaning text lowered it. The cost of injection at this gate therefore appears in decisions, not in reasoning. Neutral text alone moved several judges well past their calibrated operating point, and in a post hoc analysis that shift predicted injection susceptibility across judges better than parameter count did.
+In a local code cascade, a small model drafts, an LLM judge reviews the draft, and a larger model is called on rejection, so the judge reads text an attacker may control. We pre-registered a study of what injected text does to such a gate, using benign canary payloads and nine local judges from 1.5B to 14B parameters on held-out BigCodeBench tasks. Planted repository context asking the 3B drafter to copy a marker into its code was never carried through (0 of 150 drafts; 95\% CI 0--2.5\%). Text placed in drafts was effective: against a matched neutral comment, reject-leaning payloads raised false rejection of correct drafts for eight of nine judges, by 10 to 43 points (Holm-adjusted $p<0.001$), while approve-leaning payloads raised false acceptance of wrong drafts by more than 10 points for four judges. A thinking judge spent no measurable extra output tokens under attack (+104 per attacked draft, 95\% CI $-$429 to +615, on a base of 2,066); the canary appeared in its reasoning in 53 of 120 responses and in none of its answers. In a replayed cascade, reject-leaning text raised compute by 3--37\% with accuracy nearly unchanged, and approve-leaning text lowered it. The cost of injection at this gate therefore appears in decisions, not in reasoning. Neutral text alone moved several judges well past their calibrated thresholds; post hoc, that shift predicted susceptibility across judges better than parameter count did.
 \keywords{LLM judges \and prompt injection \and model cascades \and code generation \and pre-registration \and cost attacks}
 \end{abstract}
 

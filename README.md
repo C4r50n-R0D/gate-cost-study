@@ -1,4 +1,4 @@
-# Injection cost at a code gate
+# When the Judge Reads the Attack: Verdict and Compute Costs of Injected Text in LLM-Gated Code Cascades
 
 Pre-registered study of what benign injected text does to a judge-gated code cascade (3B drafter, LLM judge, 14B escalation) with nine local judges on held-out BigCodeBench tasks.
 
